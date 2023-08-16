@@ -1,0 +1,9 @@
+h1 {
+    @apply font-montserrat-medium text-xl leading-[70px];
+}
+h2 {
+    @apply font-montserrat-medium text-lg leading-[1.15rem] tracking-[-0.03rem];
+}
+p {
+    @apply font-inter-regular text-m leading-[150%] tracking-[100%];
+}

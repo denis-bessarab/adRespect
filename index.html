@@ -1,32 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href=""/>
     <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>adRespect</title>
-  </head>
-  <body>
-    <nav class="navbar-top">
-      <a href="#home">
-        <img src="/img/giarddesign.webp" alt="giarddesign" class="logo">
-      </a>
-      <span class="grow"></span>
-      <ul>
-        <li>
-          <a href="">
-            Oferta
-            <img src="/img/chevron-icon.webp" alt="chevron" class="inline-block h-[12px]">
-          </a>
+</head>
+<body>
+<nav class="h-[72px] w-100% bg-white px-[89px] flex items-center justify-center shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+    <a href="#intro">
+        <img src="/img/giarddesign.webp" alt="giarddesign" class="h-[20px] cursor-pointer;">
+    </a>
+    <span class="grow"></span>
+    <ul class="flex flex-row gap-3">
+        <li class="navbar-top-link">
+            <a>
+                Oferta
+                <img src="/img/chevron-icon.webp" alt="chevron" class="inline-block h-[12px]">
+            </a>
         </li>
-        <li><a href="#o-firmie">O firmie</a></li>
-        <li><a href="#realizacje">Realizacje</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li class="navbar-top-link"><a href="#o-firmie">O firmie</a></li>
+        <li class="navbar-top-link"><a href="#realizacje">Realizacje</a></li>
+        <li class="navbar-top-link"><a href="#kontakt">Kontakt</a></li>
         <li>
-          <img src="/img/search-icon.webp" alt="search">
+            <img src="/img/search-icon.webp" alt="search">
         </li>
-      </ul>
-    </nav>
-  </body>
+    </ul>
+</nav>
+<section id="intro" class="w-100% bg-beige flex items-center relative gap-4">
+    <div class="flex flex-col pl-[89px] py-[144.5px]">
+        <h1 class="mb-2.75">Nowoczesna <br/>aranżacja<br/>
+            Twojego ogrodu </h1>
+        <p class="mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka<br/>
+            estetyka realizacji. Oferujemy kompleksowy zakres usług<br/>
+            z indywidualnym podejściem do każdego projektu.</p>
+        <div class="button-container flex flex-row gap-2.25">
+            <button class="button-primary bg-green text-grey">Skontaktuj się z nami</button>
+            <button class="button-primary border-green border-[1px] text-green px-[22px]">Zobacz nasze realizacje<img
+                    src="/img/arrow-down-green.webp" alt="arrow">
+            </button>
+        </div>
+    </div>
+    <div class="absolute right-0 top-0 h-100% bg-[url('/img/slide-1.webp')] w-[calc(50%_-_32px)] bg-center bg-cover">
+        <div class="absolute bottom-0 right-0 bg-grey">
+            <img class="inline py-1.5 cursor-pointer pl-2 pr-1" src="/img/arrow-left.webp" alt="left-arrow">
+            <img class="inline py-1.5 cursor-pointer pr-2 pl-1" src="/img/arrow-right.webp" alt="right-arrow">
+        </div>
+    </div>
+</section>
+<section id="oferta">
+
+</section>
+<section id="o-firmie">
+
+</section>
+<section id="realizacje">
+
+</section>
+<section id="kontakt">
+
+</section>
+</body>
 </html>

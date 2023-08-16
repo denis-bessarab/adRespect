@@ -1,81 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "./src/base.css";
 
-@layer base {
-  h1 {
-    @apply font-montserrat-medium text-xl leading-[70px];
-  }
-  h2 {
-    @apply font-montserrat-medium text-lg leading-[115%] tracking-[-3%];
-  }
-}
-@layer components {
-  .button-primary-filled {
-    @apply font-inter-regular text-m leading-[150%];
-    @apply flex flex-row  justify-center items-center gap-0.5;
-    @apply pl-1.5 pr-1.5 pt-0.75 pb-[14px];
-    @apply rounded-[200px]
-  }
-  .button-primary-outlined {
+@import "tailwindcss/components";
+@import "./src/components.css";
 
-  }
-  .button-secondary {
-
-  }
-  .navbar-top {
-    @apply h-[72px] w-100%;
-    @apply bg-white;
-    @apply px-[89px];
-    @apply flex items-center justify-center;
-    @apply shadow-[0_4px_4px_0_rgba(0,0,0,0.25)];
-    & .logo {
-      @apply h-[20px];
-      @apply cursor-pointer;
-    }
-    & ul {
-      @apply flex flex-row gap-3;
-      & li {
-        @apply cursor-pointer;
-        @apply flex flex-row flex-nowrap gap-[5px];
-        & a {
-          @apply font-inter-regular text-[14px] leading-[21px] tracking-[-0.09px];
-          @apply flex gap-[5px] items-center;
-          & img {
-            @apply inline-block;
-          }
-        }
-      }
-    }
-  }
-}
-
-@font-face {
-  font-family: Inter-Regular;
-  src: local('Inter-Regular'), url("./public/fonts/Inter-Regular.ttf") format('truetype');
-}
-@font-face {
-  font-family: Inter-MediumItalic;
-  src: local('Inter-MediumItalic'), url("./public/fonts/Inter-MediumItalic.ttf") format('truetype');
-}
-@font-face {
-  font-family: Montserrat-Medium;
-  src: local('Montserrat-Medium'), url("./public/fonts/Montserrat-Medium.ttf") format('truetype');
-}
-a{
-}
-
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-/*REMOVE SCROLLBAR FOR DEVELOPING PURPOSES*/
-body::-webkit-scrollbar{
-  display: none;
-}
-
+@import "tailwindcss/utilities";
+@import "./src/utilities.css";

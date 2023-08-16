@@ -1,0 +1,7 @@
+.button-primary {
+    @apply font-inter-regular text-m leading-[1.375rem] flex flex-row  justify-center items-center gap-0.5 px-1.5 pt-0.75 pb-[14px] rounded-[200px];
+}
+
+.button-secondary {
+
+}
