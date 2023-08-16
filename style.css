@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-montserrat-medium;
+    @apply text-xl;
+    @apply leading-[70px]
+  }
+  h2 {
+    @apply font-montserrat-medium;
+    @apply text-lg;
+    @apply leading-[115%];
+    @apply tracking-[-3%];
+  }
+}
+@layer components {
+  .button-primary-filled {
+    @apply font-inter-regular;
+    @apply text-m;
+    @apply leading-[150%];
+    @apply flex;
+    @apply flex-row;
+    @apply justify-center;
+    @apply items-center;
+    @apply gap-0.5;
+    @apply pl-1.5;
+    @apply pr-1.5;
+    @apply pt-0.75;
+    @apply pb-[14px];
+    @apply rounded-[200px]
+  }
+  .button-primary-outlined {
+
+  }
+  .button-secondary {
+
+  }
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: local('Inter-Regular'), url("./public/fonts/Inter-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: Inter-MediumItalic;
+  src: local('Inter-MediumItalic'), url("./public/fonts/Inter-MediumItalic.ttf") format('truetype');
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: local('Montserrat-Medium'), url("./public/fonts/Montserrat-Medium.ttf") format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
