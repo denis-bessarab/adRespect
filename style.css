@@ -4,31 +4,17 @@
 
 @layer base {
   h1 {
-    @apply font-montserrat-medium;
-    @apply text-xl;
-    @apply leading-[70px]
+    @apply font-montserrat-medium text-xl leading-[70px];
   }
   h2 {
-    @apply font-montserrat-medium;
-    @apply text-lg;
-    @apply leading-[115%];
-    @apply tracking-[-3%];
+    @apply font-montserrat-medium text-lg leading-[115%] tracking-[-3%];
   }
 }
 @layer components {
   .button-primary-filled {
-    @apply font-inter-regular;
-    @apply text-m;
-    @apply leading-[150%];
-    @apply flex;
-    @apply flex-row;
-    @apply justify-center;
-    @apply items-center;
-    @apply gap-0.5;
-    @apply pl-1.5;
-    @apply pr-1.5;
-    @apply pt-0.75;
-    @apply pb-[14px];
+    @apply font-inter-regular text-m leading-[150%];
+    @apply flex flex-row  justify-center items-center gap-0.5;
+    @apply pl-1.5 pr-1.5 pt-0.75 pb-[14px];
     @apply rounded-[200px]
   }
   .button-primary-outlined {
@@ -36,6 +22,31 @@
   }
   .button-secondary {
 
+  }
+  .navbar-top {
+    @apply h-[72px] w-100%;
+    @apply bg-white;
+    @apply px-[89px];
+    @apply flex items-center justify-center;
+    @apply shadow-[0_4px_4px_0_rgba(0,0,0,0.25)];
+    & .logo {
+      @apply h-[20px];
+      @apply cursor-pointer;
+    }
+    & ul {
+      @apply flex flex-row gap-3;
+      & li {
+        @apply cursor-pointer;
+        @apply flex flex-row flex-nowrap gap-[5px];
+        & a {
+          @apply font-inter-regular text-[14px] leading-[21px] tracking-[-0.09px];
+          @apply flex gap-[5px] items-center;
+          & img {
+            @apply inline-block;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -51,6 +62,8 @@
   font-family: Montserrat-Medium;
   src: local('Montserrat-Medium'), url("./public/fonts/Montserrat-Medium.ttf") format('truetype');
 }
+a{
+}
 
 *{
   box-sizing: border-box;
@@ -60,5 +73,9 @@
 
 img {
   display: block;
+}
+/*REMOVE SCROLLBAR FOR DEVELOPING PURPOSES*/
+body::-webkit-scrollbar{
+  display: none;
 }
 

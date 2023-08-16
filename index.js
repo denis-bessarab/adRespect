@@ -1,5 +1,5 @@
 import express from 'express';
-import { fileURLToPath } from 'url';
+import {fileURLToPath} from 'url';
 import * as path from 'path';
 
 const app = express();
@@ -14,9 +14,9 @@ app.use(express.static(staticDir));
 
 // Serve the index.html file for all routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(staticDir, 'index.html'));
+  res.sendFile(path.join(staticDir, 'index.html'));
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log('Server is running on port', process.env.PORT || 8080);
+  console.log('Server is running on port', process.env.PORT || 8080);
 });
