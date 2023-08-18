@@ -3,16 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.js'],
   theme: {
     extend: {
+      backgroundPosition: {
+        'top-left': 'top left 46%',
+      },
       letterSpacing: {
         '1%': '0.01em',
         '3%': '0.03em',
         '5%': '0.05em',
-        // tighter: '-.05em',
-        // tight: '-.025em',
-        // normal: '0',
-        // wide: '.025em',
-        // wider: '.05em',
-        // widest: 'calc',
       },
       fontSize: {
         'xl': '60px',
