@@ -2,8 +2,11 @@ h1 {
     @apply font-montserrat-medium text-xl leading-[70px];
 }
 h2 {
-    @apply font-montserrat-medium text-lg leading-[1.15rem] tracking-[-0.03rem];
+    @apply font-montserrat-medium text-lg leading-[115%] -tracking-3%;
+}
+h3 {
+    @apply font-montserrat-medium text-[28px] leading-[115%] -tracking-5% mb-0.75;
 }
 p {
-    @apply font-inter-regular text-m leading-[150%] tracking-[100%];
+    @apply font-inter-regular text-m leading-[150%];
 }
