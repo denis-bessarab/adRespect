@@ -1,0 +1,12 @@
+.grid-sizer,
+.grid-item {
+    width: 451px;
+    height: 338px;
+    margin-bottom: 43px;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.grid-item--height2 { height: 452px; }
+.grid-item--height3 { height: 601px; }
+/*.grid-item--height4 { height: 360px; }*/

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>adRespect</title>
+<!--    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
 </head>
 <body>
 <nav class="h-[72px] w-100% bg-white px-[89px] flex items-center justify-center shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
@@ -136,11 +137,37 @@
     <div class="absolute left-0 top-0 h-100% bg-[url('/img/section-3.webp')] w-[calc(50%_-_32px)] bg-top-left bg-cover"></div>
 </section>
 
-<section id="realizacje">
-
+<section id="realizacje" class="bg-beige pt-[120px]">
+    <main class="flex flex-col gap-[95px]">
+        <header class="flex flex-col gap-1 pl-10">
+            <span class="text-green text-sm font-inter-regular leading-[150%] -tracking-1%">Realizacje</span>
+            <h2>Nasze <span class="font-inter-medium-italic tracking-[0px]">projekty</span>
+            </h2>
+        </header>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item"></div>
+            <div class="h-[1000px] w-100% bg-gradient-to-t from-beige to-transparent absolute bottom-0 left-0 flex flex-col-reverse items-center">
+                <button class="button-primary text-black mb-[90px]  border-[1px] border-black gap-[8px] px-[22px]">
+                    Rozwiń
+                    <img src="/img/arrow-down.webp" alt="arrow-down">
+                </button>
+            </div>
+        </div>
+    </main>
 </section>
 <section id="kontakt">
 
 </section>
 </body>
+<script src="masonry.js"></script>
+<script src="main.js"></script>
 </html>
