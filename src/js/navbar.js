@@ -111,6 +111,7 @@ menuButton.addEventListener('click', () => {
 function showMenu() {
   isMenuAnimationInProgress = true;
   menu.classList.add('visible');
+  menuButton.classList.add('opened');
   setTimeout(() => {
     isMenuVisible = true;
     isMenuAnimationInProgress = false;
@@ -121,6 +122,7 @@ function hideMenu() {
   hideSearchField();
   hideOffers();
   menu.classList.add('menu-out');
+  menuButton.classList.remove('opened');
   setTimeout(() => {
     menu.classList.remove('visible');
     menu.classList.remove('menu-out');
