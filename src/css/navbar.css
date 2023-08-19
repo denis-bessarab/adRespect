@@ -1,0 +1,143 @@
+.navbar-list {
+    @apply
+    relative
+    h-100%
+    z-10
+    flex
+    flex-row
+    items-center
+    overflow-visible
+    gap-3
+    bg-white;
+
+    @apply
+    tablet:absolute
+    tablet:gap-0
+    tablet:items-start
+    tablet:-z-0
+    tablet:-top-[800%]
+    tablet:h-max
+    tablet:right-[70px]
+    tablet:w-[300px]
+    tablet:pt-1
+    tablet:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]
+    tablet:flex-col;
+
+    @apply
+    mobile:w-100%
+    mobile:left-0;
+
+    & li {
+        @apply tablet:w-100%;
+
+        & a {
+            @apply
+            cursor-pointer
+            flex flex-row
+            flex-nowrap
+            gap-[5px]
+            font-inter-regular
+            text-[14px]
+            leading-[21px]
+            tracking-[-0.09px]
+            items-center;
+
+            @apply
+            tablet:hover:bg-grey
+            tablet:p-1;
+        }
+    }
+    & .offers {
+        & .offer-link {
+            @apply block p-1 pl-2 text-[14px] hover:bg-grey;
+        }
+    }
+}
+
+
+
+.chevron-icon {
+    @apply transition-all duration-500 rotate-0;
+}
+
+.chevron-icon.open {
+    @apply rotate-180;
+}
+
+.navbar-list.visible {
+    @apply tablet:animate-[menuIn_0.5s_forwards];
+}
+.navbar-list.menu-out {
+    @apply tablet:animate-[menuOut_0.5s_forwards];
+}
+
+@keyframes menuIn {
+    from {
+        top:-800%
+    }
+    to {
+        top:100%
+    }
+}
+@keyframes menuOut {
+    from {
+        top:100%
+    }
+    to {
+        top:-800%
+    }
+}
+
+@keyframes inputIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+@keyframes inputOut {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.menu-button {
+    @apply  tablet:flex hidden w-[30px] h-[24px] flex-col justify-between cursor-pointer relative;
+    & span {
+        @apply absolute border-black border-[1px] bg-black transition-all duration-300 w-100% h-0;
+    }
+    & .bar-1 {
+        @apply top-0;
+    }
+    & .bar-2 {
+        @apply top-50% -translate-y-50%;
+    }
+    & .bar-3 {
+        @apply bottom-0;
+    }
+}
+
+.menu-button.opened{
+    & .bar-1 {
+        @apply rotate-45 top-50% -translate-y-50%;
+    }
+    & .bar-2 {
+        @apply opacity-0;
+    }
+    & .bar-3 {
+        @apply -rotate-45 bottom-50% translate-y-50%;
+    }
+}
+
+.search-field {
+    @apply ml-0 transition-all duration-500 h-100% w-[0px] focus:outline-0 leading-[150%] font-inter-regular text-m border-b-2;
+}
+
+.search-field.visible {
+    @apply w-[200px] ml-1;
+    @apply mobile:w-[150px];
+}

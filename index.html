@@ -6,32 +6,58 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>adRespect</title>
-<!--    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
 </head>
 <body>
-<nav class="h-[72px] w-100% bg-white px-[89px] flex items-center justify-center shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
-    <a href="#intro">
-        <img src="/img/giarddesign.webp" alt="giarddesign" class="h-[20px] cursor-pointer;">
+<nav class="h-[72px] w-100% bg-white px-[89px] flex items-center justify-center mobile:px-[30px] relative z-10">
+
+    <div class="w-100% h-100% bg-white shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] absolute z-10"></div>
+
+    <a href="#intro" class="z-10">
+        <img src="/img/giarddesign.webp" alt="giarddesign" class="h-[20px] cursor-pointer">
     </a>
     <span class="grow"></span>
-    <ul class="flex flex-row gap-3">
-        <li class="navbar-top-link">
-            <a>
+    <ul class="navbar-list">
+        <li>
+            <a class="oferta">
                 Oferta
-                <img src="/img/chevron-icon.webp" alt="chevron" class="inline-block h-[12px]">
+                <img src="/img/chevron-icon.webp" alt="chevron" class="inline-block h-[12px] chevron-icon">
+            </a>
+            <div class="offers h-[0] w-[200px] tablet:w-100% overflow-hidden transition-all duration-500 tablet:relative absolute bg-white top-100% shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] tablet:shadow-none">
+                <a href="" class="offer-link">Oferta</a>
+                <a href="" class="offer-link">Oferta</a>
+                <a href="" class="offer-link">Oferta</a>
+            </div>
+        </li>
+        <li>
+            <a href="#o-firmie"
+               class="">
+                O firmie
             </a>
         </li>
-        <li class="navbar-top-link"><a href="#o-firmie">O firmie</a></li>
-        <li class="navbar-top-link"><a href="#realizacje">Realizacje</a></li>
-        <li class="navbar-top-link"><a href="#kontakt">Kontakt</a></li>
         <li>
-            <img src="/img/search-icon.webp" alt="search">
+            <a href="#realizacje"
+               class="">Realizacje
+            </a>
+        </li>
+        <li>
+            <a href="#kontakt"
+               class="">Kontakt
+            </a>
+        </li>
+        <li class="flex items-center cursor-pointer tablet:order-first">
+            <img src="/img/search-icon.webp" alt="search" class="search-icon tablet:p-1">
+            <input class="search-field" type="text"/>
         </li>
     </ul>
+    <div class="menu-button z-10">
+        <span class="bar-1"></span>
+        <span class="bar-2"></span>
+        <span class="bar-3"></span>
+    </div>
 </nav>
 
-<header id="intro" class="w-100% bg-beige flex items-center relative">
-    <main class="flex flex-col pl-[89px] py-[144.5px] gap-[72px]">
+<section id="intro" class="w-100% bg-beige flex items-center relative">
+    <header class="flex flex-col pl-[89px] py-[144.5px] gap-[72px]">
         <div class="flex flex-col gap-2.75">
             <h1>Nowoczesna<br>
                 aranżacja<br>
@@ -47,14 +73,14 @@
                     src="/img/arrow-down-green.webp" alt="arrow">
             </button>
         </div>
-    </main>
-    <div class="absolute right-0 top-0 h-100% bg-[url('/img/slide-1.webp')] w-[calc(50%_-_32px)] bg-center bg-cover">
+    </header>
+    <main class="absolute right-0 top-0 h-100% bg-[url('/img/slide-1.webp')] w-[calc(50%_-_32px)] bg-center bg-cover">
         <div class="absolute bottom-0 right-0 bg-grey">
             <img class="inline py-1.5 cursor-pointer pl-2 pr-0.875" src="/img/arrow-left.webp" alt="left-arrow">
             <img class="inline py-1.5 cursor-pointer pr-2 pl-0.875" src="/img/arrow-right.webp" alt="right-arrow">
         </div>
-    </div>
-</header>
+    </main>
+</section>
 
 <section id="oferta" class="pt-[120px] pb-[160px] bg-grey px-[89px]">
     <header class="flex gap-1 flex-col px-[111px] pb-[96px]">
@@ -213,5 +239,6 @@
 
 </body>
 <script src="masonry.js"></script>
-<script src="main.js"></script>
+<script src="src/js/navbar.js"></script>
+<script src="src/js/masonry-implementation.js"></script>
 </html>

@@ -1,9 +1,0 @@
-.navbar-top-link {
-    @apply cursor-pointer flex flex-row flex-nowrap gap-[5px];
-    & a {
-        @apply font-inter-regular text-[14px] leading-[21px] tracking-[-0.09px] flex gap-[5px] items-center;
-        & img {
-            @apply inline-block;
-        }
-    }
-}
