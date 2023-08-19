@@ -19,6 +19,7 @@ export default {
       },
       fontFamily: {
         'montserrat-medium': ['Montserrat-Medium', 'serif'],
+        'montserrat-regular': ['Montserrat-Regular', 'serif'],
         'inter-regular': ['Inter-Regular', 'serif'],
         'inter-medium-italic': ['Inter-MediumItalic', 'serif'],
       },
