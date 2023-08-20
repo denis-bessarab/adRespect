@@ -3,7 +3,7 @@ new Masonry( elem, {
   columnWidth: '.grid-sizer',
   itemSelector: '.grid-item',
   percentPosition: true,
-  gutter: 43.5,
+  gutter: '.gutter-sizer',
   horizontalOrder: true,
 });
 const gridItems = document.querySelectorAll('.grid-item');
