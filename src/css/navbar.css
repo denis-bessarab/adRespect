@@ -48,7 +48,7 @@
         }
     }
     & .offers {
-        & .offer-link {
+        & .offer {
             @apply block p-1 pl-2 text-[14px] hover:bg-grey;
         }
     }

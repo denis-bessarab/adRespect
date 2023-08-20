@@ -67,6 +67,7 @@ const debouncedSearch = debounce(searchFunction, 1000);
 const offers = document.querySelector('.offers');
 const offerLink = document.querySelector('.oferta');
 const chevronIcon = document.querySelector('.chevron-icon');
+const oferts = document.querySelectorAll('.offer-link');
 
 let isOfferAnimationInProgress = false;
 let isOfferVisible = false;
@@ -74,6 +75,12 @@ let isOfferVisible = false;
 offerLink.addEventListener('click', () => {
   if (!isOfferAnimationInProgress) {
     isOfferVisible?hideOffers():showOffers();
+  }
+});
+
+offers.addEventListener('click', () => {
+  if (!isOfferAnimationInProgress) {
+    hideOffers();
   }
 });
 

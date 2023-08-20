@@ -1,5 +1,6 @@
 .grid-sizer,
 .grid-item {
+    cursor:pointer;
     width: 31.32%;
     height: 438px;
     margin-bottom: 42.5px;

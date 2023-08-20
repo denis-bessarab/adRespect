@@ -12,7 +12,7 @@
 
     <div class="w-100% h-100% bg-white shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] absolute z-10"></div>
 
-    <a href="#intro" class="z-10">
+    <a class="z-10">
         <img src="/img/giarddesign.webp" alt="giarddesign" class="h-[19px] cursor-pointer">
     </a>
     <span class="grow"></span>
@@ -23,9 +23,9 @@
                 <img src="/img/chevron-icon.webp" alt="chevron" class="inline-block h-[12px] chevron-icon">
             </a>
             <div class="offers h-[0] w-[200px] tablet:w-100% overflow-hidden transition-all duration-500 tablet:relative absolute bg-white top-100% shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] tablet:shadow-none">
-                <a href="" class="offer-link">Oferta</a>
-                <a href="" class="offer-link">Oferta</a>
-                <a href="" class="offer-link">Oferta</a>
+                <a href="#projekty-oferta" class="offer">Projekty</a>
+                <a href="#wizualizacje-oferta" class="offer">Wizualizacje</a>
+                <a href="#realizacje-oferta" class="offer">Realizacje</a>
             </div>
         </li>
         <li>
@@ -69,11 +69,11 @@
             </p>
         </div>
         <div class="button-container flex flex-row gap-2.25 tablet-sm:flex-wrap tablet-sm:gap-1">
-            <button class="button-primary bg-green text-grey">Skontaktuj się z nami</button>
-            <button class="button-primary border-green border-[1px] text-green px-[22px]">
+            <a class="button-primary bg-green text-grey" href="#kontakt">Skontaktuj się z nami</a>
+            <a class="button-primary border-green border-[1px] text-green px-[22px]" href="#realizacje">
                 Zobacz nasze realizacje
                 <img src="/img/arrow-down-green.webp" alt="arrow" class="h-[16px]">
-            </button>
+            </a>
         </div>
     </header>
     <main class="absolute right-0 top-0 h-100% w-[calc(50%_-_32px)] overflow-hidden desktop-sm:relative laptop:basis-100% laptop:h-[600px]">
@@ -103,7 +103,7 @@
     </header>
     <main class="flex flex-row flex-wrap gap-4 tablet:flex-col mobile:gap-2">
 
-        <div class="card">
+        <div class="card" id="projekty-oferta">
             <div class="card-copy-container">
                 <img src="/img/pencil-icon.webp" alt="pencil-icon" class="card-icon">
                 <div>
@@ -117,7 +117,7 @@
             </button>
         </div>
 
-        <div class="card">
+        <div class="card" id="wizualizacje-oferta">
             <div class="card-copy-container">
                 <img src="/img/eye-icon.webp" alt="eye-icon" class="card-icon">
                 <div>
@@ -132,7 +132,7 @@
             </button>
         </div>
 
-        <div class="card">
+        <div class="card" id="realizacje-oferta">
             <div class="card-copy-container">
                 <img src="/img/stars-icon.webp" alt="stars-icon" class="card-icon">
                 <div>
@@ -235,7 +235,7 @@
 <footer id="kontakt" class="bg-black py-[80px] px-[200px] text-grey desktop-sm:px-[100px] tablet:px-2">
     <main class="flex flex-col gap-[61px] mb-[120px] tablet:mb-[30px] tablet:gap-[30px]">
         <div class="flex items-center tablet:flex-col tablet:items-start tablet:gap-1">
-            <img src="/img/giarddesign-white.webp" alt="giarddesign-wight" class="h-[19px]">
+            <img src="/img/giarddesign-white.webp" alt="giarddesign-wight" class="h-[19px] cursor-pointer">
             <div class="grow tablet:hidden"></div>
             <p class="mr-[25px] tablet:mr-1 -tracking-1%">Daj znać, co możemy dla Ciebie zrobić!</p>
             <button class="button-primary bg-green">Skontaktuj się z nami</button>
@@ -243,10 +243,18 @@
         <span class="w-100% border-grey border-b-[1px]"></span>
         <div class="flex items-center text-[14px] leading-[150%] -tracking-1% font-inter-regular mt-[1px] tablet:items-start tablet:flex-col tablet:gap-1 mobile-sm:items-start">
             <ul class="flex gap-3 tablet:gap-1 mobile:gap-0.25 mobile-sm:flex-wrap">
-                <li class="mobile-sm:basis-100%"> Kontakt</li>
-                <li class="mobile-sm:basis-100%">Instagram</li>
-                <li class="mobile-sm:basis-100%">Facebook</li>
-                <li class="mobile-sm:basis-100%">LinkedIn</li>
+                <li class="mobile-sm:basis-100% cursor-pointer">
+                    <a>Kontakt</a>
+                </li>
+                <li class="mobile-sm:basis-100% cursor-pointer">
+                    <a>Instagram</a>
+                </li>
+                <li class="mobile-sm:basis-100% cursor-pointer">
+                    <a>Facebook</a>
+                </li>
+                <li class="mobile-sm:basis-100% cursor-pointer">
+                    <a>LinkedIn</a>
+                </li>
             </ul>
             <div class="grow tablet:hidden"></div>
             <span class="mr-3 tablet:mr-1">000-000-000</span>
@@ -257,7 +265,9 @@
         <span class="mobile:basis-100%">Prawa zastrzeżone © 2022</span>
         <div class="grow mobile:hidden"></div>
         <span class="mr-1 mobile:basis-100%">made by</span>
-        <img src="/img/adRespect.webp" alt="logo" class="h-[23px] w-fit">
+        <a>
+            <img src="/img/adRespect.webp" alt="logo" class="h-[23px] w-fit cursor-pointer">
+        </a>
     </div>
 </footer>
 
