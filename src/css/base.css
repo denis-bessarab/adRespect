@@ -6,7 +6,7 @@ h1 {
 }
 h2 {
     @apply font-montserrat-medium text-lg leading-[115%] -tracking-3%;
-    @apply tablet-sm:text-[30px] leading-[135%];
+    @apply tablet-sm:text-[30px] tablet:leading-[135%];
     @apply mobile:text-[25px];
     @apply mobile-sm:text-[20px];
 }

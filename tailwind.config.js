@@ -4,6 +4,7 @@ export default {
   theme: {
     backgroundPosition: {
       'top-left': 'top left 46%',
+      'center': 'center',
     },
     letterSpacing: {
       '1%': '0.01em',
