@@ -80,6 +80,7 @@ export default {
       'white': '#fff',
       'beige': '#DCC1AB',
       'grey': '#F5F0EC',
+      'transparent': 'rgba(0,0,0,0)',
     },
   },
   plugins: [],

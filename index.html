@@ -69,22 +69,26 @@
             </p>
         </div>
         <div class="button-container flex flex-row gap-2.25 tablet-sm:flex-wrap tablet-sm:gap-1">
-            <a class="button-primary bg-green text-grey" href="#kontakt">Skontaktuj się z nami</a>
-            <a class="button-primary border-green border-[1px] text-green px-[22px]" href="#realizacje">
+            <button class="button-primary green" onclick="buttonAnimate(event,moveToKontaktSection)">Skontaktuj się z nami</button>
+            <button class="button-primary outlined px-[22px] green" onclick="buttonAnimate(event,moveToRealizacjeSection)">
                 Zobacz nasze realizacje
-                <img src="/img/arrow-down-green.webp" alt="arrow" class="h-[16px]">
-            </a>
+                <span class="arrow">
+                    <span class="arrow-bar-1"></span>
+                    <span class="arrow-bar-2"></span>
+                    <span class="arrow-bar-3"></span>
+                </span>
+            </button>
         </div>
     </header>
     <main class="absolute right-0 top-0 h-100% w-[calc(50%_-_32px)] overflow-hidden desktop-sm:relative laptop:basis-100% laptop:h-[600px]">
         <div class="slider-view h-100% w-100% left-0 transition-all duration-1000 relative">
-            <div class="slide w-100% bg-black h-100% absolute bg-center bg-no-repeat bg-cover"></div>
-            <div class="slide w-100% bg-green h-100% absolute bg-center bg-no-repeat bg-cover"></div>
-            <div class="slide w-100% bg-white h-100% absolute bg-center bg-no-repeat bg-cover"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
         </div>
         <div class="absolute bottom-0 right-0 bg-grey flex">
-            <img class="inline box-content pl-2 py-1.5 pr-1 cursor-pointer arrow-left h-[48px] w-[48px] mobile:pl-1 mobile:py-1 mobile:pr-0.5" src="/img/arrow-left-black.webp" alt="left-arrow">
-            <img class="inline box-content pl-2 py-1.5 pr-1 cursor-pointer arrow-right h-[48px] w-[48px] rotate-180 mobile:pl-1 mobile:py-1 mobile:pr-0.5" src="/img/arrow-left-black.webp" alt="right-arrow">
+            <img class="slider-arrow slider-arrow-left" src="/img/arrow-left-black.webp" alt="left-arrow">
+            <img class="slider-arrow rotate-180 slider-arrow-right" src="/img/arrow-left-black.webp" alt="right-arrow">
         </div>
     </main>
 </section>
@@ -112,8 +116,13 @@
                         istniejącej przestrzeni.</p>
                 </div>
             </div>
-            <button class="button-secondary ">Dowiedz się więcej
-                <img src="/img/arrow-down-green.webp" alt="arrow-right" class="h-[16px] -rotate-90">
+            <button class="button-secondary" onclick="buttonAnimate(event)">
+                Dowiedz się więcej
+                <span class="arrow arrow-right">
+                    <span class="arrow-bar-1"></span>
+                    <span class="arrow-bar-2"></span>
+                    <span class="arrow-bar-3"></span>
+                </span>
             </button>
         </div>
 
@@ -126,9 +135,13 @@
                         animowanego w technologii 3D.</p>
                 </div>
             </div>
-            <button class="button-secondary ">
+            <button class="button-secondary" onclick="buttonAnimate(event)">
                 Dowiedz się więcej
-                <img src="/img/arrow-down-green.webp" alt="arrow-right" class="h-[16px] -rotate-90">
+                <span class="arrow arrow-right">
+                    <span class="arrow-bar-1"></span>
+                    <span class="arrow-bar-2"></span>
+                    <span class="arrow-bar-3"></span>
+                </span>
             </button>
         </div>
 
@@ -141,9 +154,13 @@
                         technologii.</p>
                 </div>
             </div>
-            <button class="button-secondary ">
+            <button class="button-secondary" onclick="buttonAnimate(event)">
                 Zobacz nasze realizacje
-                <img src="/img/arrow-down-green.webp" alt="arrow-right" class="h-[16px] -rotate-90">
+                <span class="arrow arrow-right">
+                    <span class="arrow-bar-1"></span>
+                    <span class="arrow-bar-2"></span>
+                    <span class="arrow-bar-3"></span>
+                </span>
             </button>
         </div>
 
@@ -167,9 +184,13 @@
                 </p>
             </div>
         </div>
-        <button class="button-primary bg-green text-grey border-[1px] w-max px-[22px]">
+        <button class="button-primary outlined grey w-max px-[22px]" onclick="buttonAnimate(event)">
             Poznaj nas bliżej
-            <img src="/img/arrow-right-grey.webp" alt="arrow-right" class="h-[16px]">
+            <span class="arrow arrow-right">
+                <span class="arrow-bar-1"></span>
+                <span class="arrow-bar-2"></span>
+                <span class="arrow-bar-3"></span>
+            </span>
         </button>
     </main>
     <div class="absolute left-0 top-0 h-100% bg-[url('/img/section-3.webp')] w-[calc(50%_-_32px)] bg-top-left bg-cover laptop:relative laptop:basis-100% laptop:h-[600px]"></div>
@@ -208,9 +229,13 @@
 
     </main>
     <div class="gradient h-[1000px] w-100% bg-gradient-to-t from-beige to-transparent absolute bottom-0 left-0 flex flex-col-reverse items-center transition-all duration-1000">
-        <button class="button-primary text-black mb-[90px] border-[1px] border-black gap-[8px] px-[22px] basis-0" id="rozwin">
+        <button class="button-primary outlined black mb-[90px] gap-[8px] px-[22px] basis-0" id="rozwin" onclick="buttonAnimate(event,rozwinFunction)">
             Rozwiń
-            <img src="/img/arrow-down-black.webp" alt="arrow-down" class="h-[16px]">
+            <span class="arrow">
+                <span class="arrow-bar-1"></span>
+                <span class="arrow-bar-2"></span>
+                <span class="arrow-bar-3"></span>
+            </span>
         </button>
     </div>
 </section>
@@ -226,7 +251,7 @@
                     Śledź nasze<br>
                     najnowsze realizacje!
                 </span>
-                <button class="button-primary bg-white text-green w-max pb-0.75 pt-0.625 h-max">Instagram</button>
+                <button class="button-primary grey w-max pb-0.75 pt-0.625 h-max" onclick="buttonAnimate(event)">Instagram</button>
             </div>
         </div>
     </main>
@@ -238,7 +263,7 @@
             <img src="/img/giarddesign-white.webp" alt="giarddesign-wight" class="h-[19px] cursor-pointer">
             <div class="grow tablet:hidden"></div>
             <p class="mr-[25px] tablet:mr-1 -tracking-1%">Daj znać, co możemy dla Ciebie zrobić!</p>
-            <button class="button-primary bg-green">Skontaktuj się z nami</button>
+            <button class="button-primary green" onclick="buttonAnimate(event)">Skontaktuj się z nami</button>
         </div>
         <span class="w-100% border-grey border-b-[1px]"></span>
         <div class="flex items-center text-[14px] leading-[150%] -tracking-1% font-inter-regular mt-[1px] tablet:items-start tablet:flex-col tablet:gap-1 mobile-sm:items-start">
@@ -277,4 +302,5 @@
 <script src="src/js/masonry-implementation.js"></script>
 <script src="src/js/slider.js"></script>
 <script src="src/js/realizacje.js"></script>
+<script src="src/js/buttons.js"></script>
 </html>

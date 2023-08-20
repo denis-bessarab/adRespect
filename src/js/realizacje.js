@@ -4,10 +4,6 @@ const gridWrapper = document.querySelector('.grid-wrapper');
 const gradient = document.querySelector('.gradient');
 const gridHeight = grid.clientHeight;
 
-rozwinButton.addEventListener('click', () => {
-  rozwinFunction();
-});
-
 function rozwinFunction() {
   gridWrapper.style.height = gridHeight.toString() + 'px';
   rozwinButton.classList.add('hidden');

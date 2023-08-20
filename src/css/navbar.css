@@ -73,35 +73,35 @@
 
 @keyframes menuIn {
     from {
-        top:-800%
+        @apply -top-[800%];
     }
     to {
-        top:100%
+        @apply top-100%;
     }
 }
 @keyframes menuOut {
     from {
-        top:100%
+        @apply top-100%;
     }
     to {
-        top:-800%
+        @apply -top-[800%];
     }
 }
 
 @keyframes inputIn {
     from {
-        width: 0;
+        @apply w-0;
     }
     to {
-        width: 300px;
+        @apply w-[300px];
     }
 }
 @keyframes inputOut {
     from {
-        width: 300px;
+        @apply w-[300px];
     }
     to {
-        width: 0;
+        @apply w-0;
     }
 }
 

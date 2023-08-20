@@ -1,0 +1,11 @@
+.slide {
+    @apply w-100% bg-black h-100% absolute bg-center bg-no-repeat bg-cover;
+}
+
+.slider-arrow {
+    @apply inline box-content cursor-pointer pl-2 py-1.5 pr-1 transition-all duration-100 scale-100 h-[48px] w-[48px] mobile:pl-1 mobile:py-1 mobile:pr-0.5;
+}
+
+.slider-arrow.animated {
+    @apply scale-90;
+}
