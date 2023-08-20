@@ -175,33 +175,44 @@
     <div class="absolute left-0 top-0 h-100% bg-[url('/img/section-3.webp')] w-[calc(50%_-_32px)] bg-top-left bg-cover laptop:relative laptop:basis-100% laptop:h-[600px]"></div>
 </section>
 
-<section id="realizacje" class="bg-beige pt-[120px] desktop-sm:pt-[100px] obile:py-3 mobile:pt-3">
+<section id="realizacje" class="bg-beige pt-[120px] desktop-sm:pt-[100px] obile:py-3 mobile:pt-3 relative mobile:pb-1">
     <main class="flex flex-col gap-[95px] tablet-sm:gap-3">
         <header class="flex flex-col gap-1 pl-10 desktop-sm:pl-[89px] desktop-sm:px-[89px] laptop:px-4 mobile:px-2 mobile-sm:px-1">
             <span class="text-green text-sm font-inter-regular leading-[150%] -tracking-1%">Realizacje</span>
             <h2>Nasze <span class="font-inter-medium-italic tracking-[0px]">projekty</span>
             </h2>
         </header>
-        <div class="grid w-[100%] tablet-sm:mx-au">
-            <div class="grid-sizer"></div>
-            <div class="gutter-sizer"></div>
-            <div class="grid-item grid-item--height3"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item grid-item--height2"></div>
-            <div class="grid-item grid-item--height2"></div>
-            <div class="grid-item grid-item--height2"></div>
-            <div class="grid-item grid-item--height3"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item grid-item--height3"></div>
-            <div class="grid-item"></div>
-            <div class="h-[1000px] w-100% bg-gradient-to-t from-beige to-transparent absolute bottom-0 left-0 flex flex-col-reverse items-center">
-                <button class="button-primary text-black mb-[90px] border-[1px] border-black gap-[8px] px-[22px] basis-0">
-                    Rozwiń
-                    <img src="/img/arrow-down-black.webp" alt="arrow-down" class="h-[16px]">
-                </button>
+        <div class="grid-wrapper overflow-hidden h-[1520px] mobile:h-[1800px] transition-all duration-1000">
+            <div class="grid w-[100%] last-of-type:mb-0">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+
+                <div class="grid-item grid-item--height3"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height3"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item grid-item--height3"></div>
+                <div class="grid-item"></div>
+
+                <div class="grid-item grid-item--height3"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height2"></div>
+                <div class="grid-item grid-item--height3"></div>
             </div>
         </div>
+
     </main>
+    <div class="gradient h-[1000px] w-100% bg-gradient-to-t from-beige to-transparent absolute bottom-0 left-0 flex flex-col-reverse items-center transition-all duration-1000">
+        <button class="button-primary text-black mb-[90px] border-[1px] border-black gap-[8px] px-[22px] basis-0" id="rozwin">
+            Rozwiń
+            <img src="/img/arrow-down-black.webp" alt="arrow-down" class="h-[16px]">
+        </button>
+    </div>
 </section>
 
 <section id="instagram-block" class="bg-white py-[60px] px-[200px] desktop-sm:px-[100px] laptop:px-[50px] tablet:px-2 tablet:py-2 tablet-sm:px-0">
@@ -255,4 +266,5 @@
 <script src="src/js/navbar.js"></script>
 <script src="src/js/masonry-implementation.js"></script>
 <script src="src/js/slider.js"></script>
+<script src="src/js/realizacje.js"></script>
 </html>
