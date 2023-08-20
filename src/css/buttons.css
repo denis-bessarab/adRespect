@@ -1,5 +1,7 @@
 .button-primary {
     @apply font-inter-regular text-m leading-[150%] flex flex-row h-[50px]  justify-center items-center gap-0.5 pl-1.5 pr-1.5 pt-0.75 pb-[14px] rounded-[200px];
+    @apply mobile:text-[14px] tablet-sm:basis-75% ;
+    @apply mobile-sm:basis-100%;
 }
 
 .button-secondary {

@@ -1,5 +1,7 @@
 h1 {
     @apply font-montserrat-medium text-xl leading-[70px];
+    @apply tablet-sm:text-[40px] tablet-sm:leading-[50px];
+    @apply mobile-sm:text-[25px] mobile-sm:leading-[35px];
 }
 h2 {
     @apply font-montserrat-medium text-lg leading-[115%] -tracking-3%;
@@ -9,4 +11,6 @@ h3 {
 }
 p {
     @apply font-inter-regular text-m leading-[150%];
+    @apply mobile:text-[12px] leading-[150%];
+    @apply mobile-sm:text-[10px];
 }

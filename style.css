@@ -6,3 +6,8 @@
 
 @import "tailwindcss/utilities";
 @import "./src/css/utilities.css";
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
