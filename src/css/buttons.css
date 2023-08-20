@@ -6,4 +6,6 @@
 
 .button-secondary {
     @apply font-inter-regular text-m leading-[150%] flex items-center gap-[11px] pb-[3px] border-b-[1px] border-green w-max text-green;
+    @apply mobile:text-[14px] tablet-sm:basis-75% ;
+    @apply mobile-sm:basis-100%;
 }

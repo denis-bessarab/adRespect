@@ -1,16 +1,21 @@
 h1 {
     @apply font-montserrat-medium text-xl leading-[70px];
     @apply tablet-sm:text-[40px] tablet-sm:leading-[50px];
+    @apply mobile:text-[30px] mobile:leading-[40px];
     @apply mobile-sm:text-[25px] mobile-sm:leading-[35px];
 }
 h2 {
     @apply font-montserrat-medium text-lg leading-[115%] -tracking-3%;
+    @apply tablet-sm:text-[30px] leading-[135%];
+    @apply mobile:text-[25px];
+    @apply mobile-sm:text-[20px];
 }
 h3 {
     @apply font-montserrat-medium text-[28px] leading-[115%] -tracking-5% mb-0.75;
+    @apply mobile:text-[20px]
 }
 p {
     @apply font-inter-regular text-m leading-[150%];
-    @apply mobile:text-[12px] leading-[150%];
-    @apply mobile-sm:text-[10px];
+    @apply mobile:text-[14px];
+    @apply mobile-sm:text-[12px];
 }

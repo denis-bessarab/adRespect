@@ -2,11 +2,14 @@
     @apply flex flex-col py-[48px] px-[40px] bg-white max-w-[378px] rounded-[28px];
     & .card-copy-container {
         @apply flex flex-col gap-2 mb-[63px];
+        @apply mobile:mb-[31px];
         & .card-icon {
             @apply h-[44px] w-max;
+            @apply mobile:h-[33px]
         }
     }
     & .card-copy {
         @apply text-[14px] leading-[150%] -tracking-1%;
+        @apply mobile:text-[12px];
     }
 }
