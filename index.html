@@ -74,10 +74,15 @@
             </button>
         </div>
     </header>
-    <main class="absolute right-0 top-0 h-100% bg-[url('/img/slide-1.webp')] w-[calc(50%_-_32px)] bg-center bg-cover">
+    <main class="absolute right-0 top-0 h-100% w-[calc(50%_-_32px)] overflow-hidden">
+        <div class="slider-view h-100% w-100% left-0 transition-all duration-1000 relative">
+            <div class="slide w-100% bg-black h-100% absolute bg-center bg-cover"></div>
+            <div class="slide w-100% bg-green h-100% absolute bg-center bg-cover"></div>
+            <div class="slide w-100% bg-white h-100% absolute bg-center bg-cover"></div>
+        </div>
         <div class="absolute bottom-0 right-0 bg-grey">
-            <img class="inline py-1.5 cursor-pointer pl-2 pr-0.875" src="/img/arrow-left.webp" alt="left-arrow">
-            <img class="inline py-1.5 cursor-pointer pr-2 pl-0.875" src="/img/arrow-right.webp" alt="right-arrow">
+            <img class="inline py-1.5 cursor-pointer pl-2 pr-0.875 arrow-left" src="/img/arrow-left.webp" alt="left-arrow">
+            <img class="inline py-1.5 cursor-pointer pr-2 pl-0.875 arrow-right" src="/img/arrow-right.webp" alt="right-arrow">
         </div>
     </main>
 </section>
@@ -241,4 +246,5 @@
 <script src="masonry.js"></script>
 <script src="src/js/navbar.js"></script>
 <script src="src/js/masonry-implementation.js"></script>
+<script src="src/js/slider.js"></script>
 </html>
