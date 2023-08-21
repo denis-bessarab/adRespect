@@ -6,6 +6,7 @@ const actualImageNumber = document.querySelector('.actual-image-number');
 const amount = document.querySelector('.amount');
 const galleryArrowLeft = document.querySelector('.gallery-arrow-left');
 const galleryArrowRight = document.querySelector('.gallery-arrow-right');
+let isGalleryVisible = false;
 
 let currentImage;
 amount.innerText = realizations.length.toString();
@@ -21,12 +22,7 @@ realizations.forEach((realization) => {
 
 galleryArrowRight.addEventListener('click', () => {
   animateArrow(galleryArrowRight);
-  const currentImageIndex = [...realizations].indexOf(currentImage);
-  if (currentImageIndex < realizations.length - 1) {
-    currentImage = realizations[currentImageIndex + 1];
-  } else {
-    currentImage = realizations[0];
-  }
+  setDirection('right');
   changeImage();
 });
 
@@ -36,16 +32,12 @@ closeArea.addEventListener('click', () => {
 
 galleryArrowLeft.addEventListener('click', () => {
   animateArrow(galleryArrowLeft);
-  const currentImageIndex = [...realizations].indexOf(currentImage);
-  if (currentImageIndex !== 0) {
-    currentImage = realizations[currentImageIndex - 1];
-  } else {
-    currentImage = realizations[realizations.length - 1];
-  }
+  setDirection('left');
   changeImage();
 });
 
 function showGallery() {
+  isGalleryVisible = true;
   gallery.classList.remove('hidden');
   setTimeout(() => {
     showImage();
@@ -53,6 +45,7 @@ function showGallery() {
 }
 
 function hideGallery() {
+  isGalleryVisible = false;
   gallery.classList.add('hidden');
   hideImage();
 }
@@ -60,6 +53,29 @@ function hideGallery() {
 function prepareSrcFromUrl() {
   const backgoundImageUrl = currentImage.style.backgroundImage;
   return backgoundImageUrl.split('').slice(5).reverse().slice(2).reverse().join('');
+}
+
+function setDirection(dir) {
+  switch (dir) {
+    case 'left': {
+      const currentImageIndex = [...realizations].indexOf(currentImage);
+      if (currentImageIndex !== 0) {
+        currentImage = realizations[currentImageIndex - 1];
+      } else {
+        currentImage = realizations[realizations.length - 1];
+      }
+      break;
+    }
+    case 'right': {
+      const currentImageIndex = [...realizations].indexOf(currentImage);
+      if (currentImageIndex < realizations.length - 1) {
+        currentImage = realizations[currentImageIndex + 1];
+      } else {
+        currentImage = realizations[0];
+      }
+      break;
+    }
+  }
 }
 
 function setImage() {
@@ -97,3 +113,19 @@ function animateArrow(arrow) {
     arrow.classList.remove('scale-95');
   }, 200);
 }
+
+document.addEventListener('keyup', (e) => {
+  if (isGalleryVisible) {
+    if (e.key === 'ArrowLeft') {
+      setDirection('left');
+      changeImage();
+    }
+    if (e.key === 'ArrowRight') {
+      setDirection('right');
+      changeImage();
+    }
+    if (e.key === 'Escape') {
+      hideGallery();
+    }
+  }
+});
