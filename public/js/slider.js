@@ -7,7 +7,7 @@ const sliderStatuses = document.querySelectorAll('.slide-status');
 let currentSlide = 0;
 
 slides.forEach((slide, index) => {
-  slide.style.backgroundImage = `url('../../public/img/slider/slide-${(index + 1).toString()}.webp')`;
+  slide.style.backgroundImage = `url('/img/slider/slide-${(index + 1).toString()}.webp')`;
   slide.style.left = index.toString() + '00%';
 });
 

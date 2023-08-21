@@ -1,15 +1,12 @@
 @import "tailwindcss/base";
-@import "./src/css/base.css";
+@import "public/css/base.css";
 
 @import "tailwindcss/components";
-@import "./src/css/components.css";
+@import "public/css/components.css";
 
 @import "tailwindcss/utilities";
-@import "./src/css/utilities.css";
+@import "public/css/utilities.css";
 
 html {
     scroll-behavior: smooth;
-}
-* {
-    -webkit-tap-highlight-color: transparent;
 }

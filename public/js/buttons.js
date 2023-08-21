@@ -42,5 +42,5 @@ function showButtons(entries) {
       entry.target.classList.add('visible');
     }
   });
-};
+}
 

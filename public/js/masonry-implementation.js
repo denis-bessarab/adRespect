@@ -9,6 +9,6 @@ new Masonry( elem, {
 const gridItems = document.querySelectorAll('.grid-item');
 gridItems.forEach((item, index) => {
   item.id = `r${(index + 1).toString()}`;
-  item.style.backgroundImage = `url('./public/img/realizacje/r${(index + 1).toString()}.webp')`;
+  item.style.backgroundImage = `url('/img/realizacje/r${(index + 1).toString()}.webp')`;
 });
 
