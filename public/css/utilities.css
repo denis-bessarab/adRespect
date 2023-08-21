@@ -14,7 +14,13 @@
     font-family: Montserrat-Regular;
     src: local('Montserrat-Regular'), url("../fonts/Montserrat-Regular.ttf") format('truetype');
 }
-a{
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 *{
@@ -25,8 +31,4 @@ a{
 
 img {
     display: block;
-}
-/*REMOVE SCROLLBAR FOR DEVELOPING PURPOSES*/
-body::-webkit-scrollbar{
-    display: none;
 }

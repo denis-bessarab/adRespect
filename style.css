@@ -7,6 +7,3 @@
 @import "tailwindcss/utilities";
 @import "public/css/utilities.css";
 
-html {
-    scroll-behavior: smooth;
-}
