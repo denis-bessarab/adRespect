@@ -1,5 +1,5 @@
 .slide {
-    @apply w-100% bg-black h-100% absolute bg-center bg-no-repeat bg-cover;
+    @apply w-100% h-100% absolute bg-center bg-no-repeat bg-cover;
 }
 
 .slider-arrow {
