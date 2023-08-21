@@ -108,10 +108,10 @@ function hideImage() {
 }
 
 function animateArrow(arrow) {
-  arrow.classList.add('scale-95');
+  arrow.classList.add('animated');
   setTimeout(() => {
-    arrow.classList.remove('scale-95');
-  }, 200);
+    arrow.classList.remove('animated');
+  }, 400);
 }
 
 document.addEventListener('keyup', (e) => {

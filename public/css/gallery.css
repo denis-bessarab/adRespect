@@ -1,0 +1,16 @@
+.gallery-arrow-left,
+.gallery-arrow-right{
+    @apply absolute h-[48px] z-20 p-0.5 rotate-90 top-50% -translate-y-50% bg-gallery-arrows cursor-pointer transition-all duration-200;
+}
+
+.gallery-arrow-left {
+    @apply left-0 rotate-90;
+}
+.gallery-arrow-right {
+    @apply right-0 -rotate-90;
+}
+
+.gallery-arrow-right.animated,
+.gallery-arrow-left.animated {
+    @apply scale-95;
+}
