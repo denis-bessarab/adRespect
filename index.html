@@ -257,6 +257,20 @@
     </main>
 </section>
 
+<section id="gallery" class="fixed h-100% w-100% left-0 top-0 bg-gallery z-20 p-1 flex flex-col justify-center hidden">
+    <div class="close-area absolute left-0 top-0 w-100% h-100%"></div>
+    <div class="relative mx-auto max-h-[90%]">
+        <img src="" alt="" class="relative h-100% gallery-image transition-all duration-200 opacity-0">
+        <div class="text-grey flex gap-0.5 absolute -bottom-2.5 left-50% -translate-x-50% text-[20px]">
+            <span class="actual-image-number pointer-events-none"></span>
+            <span class="pointer-events-none">/</span>
+            <span class="amount pointer-events-none"></span>
+        </div>
+    </div>
+    <img src="/img/chevron-icon-96x96.webp" alt="" class="absolute h-[48px] left-0 z-20 p-0.5  rotate-90 top-50% -translate-y-50% bg-gallery-arrows cursor-pointer gallery-arrow-left transition-all duration-100">
+    <img src="/img/chevron-icon-96x96.webp" alt="" class="absolute h-[48px] right-0 z-20 p-0.5 -rotate-90 top-50% -translate-y-50% bg-gallery-arrows cursor-pointer gallery-arrow-right transition-all duration-100">
+</section>
+
 <footer id="kontakt" class="bg-black py-[80px] px-[200px] text-grey desktop-sm:px-[100px] tablet:px-2">
     <main class="flex flex-col gap-[61px] mb-[120px] tablet:mb-[30px] tablet:gap-[30px]">
         <div class="flex items-center tablet:flex-col tablet:items-start tablet:gap-1">
@@ -303,4 +317,5 @@
 <script src="src/js/slider.js"></script>
 <script src="src/js/realizacje.js"></script>
 <script src="src/js/buttons.js"></script>
+<script src="src/js/gallery.js"></script>
 </html>

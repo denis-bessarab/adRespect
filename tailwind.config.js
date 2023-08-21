@@ -81,6 +81,8 @@ export default {
       'beige': '#DCC1AB',
       'grey': '#F5F0EC',
       'transparent': 'rgba(0,0,0,0)',
+      'gallery': 'rgba(0,0,0,0.75)',
+      'gallery-arrows': 'rgba(245,240,236,0.5)',
     },
   },
   plugins: [],
