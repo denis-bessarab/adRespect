@@ -80,6 +80,7 @@ export default {
       'white': '#fff',
       'beige': '#DCC1AB',
       'grey': '#F5F0EC',
+      'grey-75': 'rgba(245,240,236,0.75)',
       'transparent': 'rgba(0,0,0,0)',
       'gallery': 'rgba(0,0,0,0.75)',
       'gallery-arrows': 'rgba(245,240,236,0.5)',

@@ -3,6 +3,8 @@ const sliderView = document.querySelector('.slider-view');
 const arrowLeft = document.querySelector('.slider-arrow-left');
 const arrowRight = document.querySelector('.slider-arrow-right');
 let isSliderAnimationInProgress = false;
+const sliderStatuses = document.querySelectorAll('.slide-status');
+let currentSlide = 0;
 
 slides.forEach((slide, index) => {
   slide.style.backgroundImage = `url('../../public/img/slider/slide-${(index + 1).toString()}.webp')`;
@@ -23,12 +25,12 @@ arrowLeft.addEventListener('click', (e) => {
   }
 });
 
-let currentSlide = 0;
 function moveSliderRight() {
   if (currentSlide < slides.length - 1) {
     isSliderAnimationInProgress = true;
     currentSlide++;
     sliderView.style.left = '-' + currentSlide.toString() + '00%';
+    changeSlideStatus();
     setTimeout(() => {
       isSliderAnimationInProgress = false;
     }, 1000);
@@ -39,6 +41,7 @@ function moveSliderLeft() {
     isSliderAnimationInProgress = true;
     currentSlide--;
     sliderView.style.left = '-' + currentSlide.toString() + '00%';
+    changeSlideStatus();
     setTimeout(() => {
       isSliderAnimationInProgress = false;
     }, 1000);
@@ -50,5 +53,12 @@ function sliderArrowsAnimation(arrow) {
   setTimeout(() => {
     arrow.classList.remove('animated');
   }, 200);
+}
+
+function changeSlideStatus() {
+  sliderStatuses.forEach((status) => {
+    status.classList.remove('active');
+  });
+  sliderStatuses[currentSlide].classList.add('active');
 }
 

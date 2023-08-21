@@ -9,3 +9,11 @@
 .slider-arrow.animated {
     @apply scale-90;
 }
+
+.slide-status {
+    @apply w-1 h-1 border-grey-75 border-[2px] rounded-[100%];
+}
+
+.slide-status.active {
+    @apply bg-grey-75;
+}
