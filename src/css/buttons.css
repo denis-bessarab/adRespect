@@ -8,7 +8,7 @@
     @apply font-inter-regular text-m leading-[150%] flex items-center gap-[11px] pb-[3px] w-max text-green relative;
     @apply mobile:text-[14px] tablet-sm:basis-75% ;
     @apply mobile-sm:basis-100%;
-    @apply after:content-[''] after:absolute after:w-100% after:border-[1px] after:bottom-0;
+    @apply after:content-[''] after:absolute after:w-100% after:border-b-[1px] after:top-100%;
 }
 
 @keyframes buttonSecondaryClick {
@@ -57,21 +57,21 @@
 .arrow {
     @apply h-[16px] w-[16px] relative pointer-events-none;
     & span {
-        @apply border-[1px] absolute ;
+        @apply border-r-[1px] absolute ;
     }
     & .arrow-bar-1 {
-        @apply  h-100%;
+        @apply  h-[92%] bottom-0 ;
     }
     & .arrow-bar-2 {
-        @apply h-75% bottom-0 rotate-45 -translate-x-[40%] origin-bottom;
+        @apply h-[70%] bottom-0 rotate-45 -translate-x-[40%] origin-bottom;
     }
     & .arrow-bar-3 {
-        @apply h-75% bottom-0 -rotate-45 origin-bottom translate-x-[40%];
+        @apply h-[70%] bottom-0 -rotate-45 origin-bottom translate-x-[40%];
     }
 }
 
 .arrow-right {
-    @apply -rotate-90 translate-y-[1px];
+    @apply -rotate-90 -translate-x-[8%];
 }
 
 
