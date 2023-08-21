@@ -1,5 +1,5 @@
 .card {
-    @apply flex flex-col py-[48px] px-[40px] bg-white max-w-[378px] rounded-[28px];
+    @apply flex flex-col py-[48px] px-[40px] bg-white max-w-[378px] rounded-[28px] scale-0;
     & .card-copy-container {
         @apply flex flex-col gap-2 mb-[63px];
         @apply mobile:mb-[31px];
@@ -12,4 +12,20 @@
         @apply text-[14px] leading-[150%] -tracking-1%;
         @apply mobile:text-[12px];
     }
+}
+
+@keyframes cardShowUp {
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.card.visible {
+    @apply animate-[cardShowUp_0.4s_linear_forwards];
 }

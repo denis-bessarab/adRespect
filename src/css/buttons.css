@@ -20,6 +20,16 @@
     }
 }
 
+@keyframes buttonShowUp {
+    0% {
+        transform: scale(0);
+
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
 .button-primary.outlined {
     @apply bg-transparent;
 }
@@ -83,4 +93,7 @@
 }
 .button-secondary.animated:after {
     @apply animate-[buttonSecondaryClick_0.2s_linear]
+}
+.button-primary.visible {
+    @apply animate-[buttonShowUp_0.3s_linear_forwards]
 }

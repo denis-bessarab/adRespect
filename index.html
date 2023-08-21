@@ -184,7 +184,7 @@
                 </p>
             </div>
         </div>
-        <button class="button-primary outlined grey w-max px-[22px]" onclick="buttonAnimate(event)">
+        <button class="button-primary outlined grey w-max px-[22px] scale-0" onclick="buttonAnimate(event)">
             Poznaj nas bliżej
             <span class="arrow arrow-right">
                 <span class="arrow-bar-1"></span>
@@ -229,7 +229,7 @@
 
     </main>
     <div class="gradient h-[1000px] w-100% bg-gradient-to-t from-beige to-transparent absolute bottom-0 left-0 flex flex-col-reverse items-center transition-all duration-1000">
-        <button class="button-primary outlined black mb-[90px] gap-[8px] px-[22px] basis-0" id="rozwin" onclick="buttonAnimate(event,rozwinFunction)">
+        <button class="button-primary outlined black mb-[90px] gap-[8px] px-[22px] basis-0 scale-0" id="rozwin" onclick="buttonAnimate(event,rozwinFunction)">
             Rozwiń
             <span class="arrow">
                 <span class="arrow-bar-1"></span>
@@ -251,7 +251,7 @@
                     Śledź nasze<br>
                     najnowsze realizacje!
                 </span>
-                <button class="button-primary grey w-max pb-0.75 pt-0.625 h-max" onclick="buttonAnimate(event)">Instagram</button>
+                <button class="button-primary grey w-max pb-0.75 pt-0.625 h-max instagram-button scale-0 transition-all duration-500" onclick="buttonAnimate(event)">Instagram</button>
             </div>
         </div>
     </main>
@@ -277,7 +277,7 @@
             <img src="/img/giarddesign-white.webp" alt="giarddesign-wight" class="h-[19px] cursor-pointer">
             <div class="grow tablet:hidden"></div>
             <p class="mr-[25px] tablet:mr-1 -tracking-1%">Daj znać, co możemy dla Ciebie zrobić!</p>
-            <button class="button-primary green" onclick="buttonAnimate(event)">Skontaktuj się z nami</button>
+            <button class="button-primary green scale-0" onclick="buttonAnimate(event)">Skontaktuj się z nami</button>
         </div>
         <span class="w-100% border-grey border-b-[1px]"></span>
         <div class="flex items-center text-[14px] leading-[150%] -tracking-1% font-inter-regular mt-[1px] tablet:items-start tablet:flex-col tablet:gap-1 mobile-sm:items-start">
@@ -313,6 +313,7 @@
 </body>
 <script src="masonry.js"></script>
 <script src="src/js/navbar.js"></script>
+<script src="src/js/cards-observer.js"></script>
 <script src="src/js/masonry-implementation.js"></script>
 <script src="src/js/slider.js"></script>
 <script src="src/js/realizacje.js"></script>
