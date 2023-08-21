@@ -20,6 +20,7 @@ let isFieldVisible = false;
 searchIcon.addEventListener('click', () => {
   if (!isSearchAnimationInProgress) {
     isFieldVisible?hideSearchField():showSearchField();
+    searchField.focus();
   }
 });
 
